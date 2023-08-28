@@ -1,0 +1,28 @@
+<section class="sticky top-0 z-40">
+    <nav class="bg-green-500 border-gray-200 dark:bg-gray-900 text-white">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+            <a href="/" class="flex items-center">
+               <div class="w-8">
+                {{ responsive:cmb:logo ratio="1/1" glide:width="40" class="!w-8 h-8" }}
+               </div>
+                <span class="px-4 text-white font[15px] font-normal uppercase truncate"> {{ title }}</span>
+            </a>
+            <div class="flex items-center">
+
+            </div>
+        </div>
+    </nav>
+    <nav class="bg-blue-100 dark:bg-gray-700">
+        <div class="max-w-screen-xl px-4 py-3 mx-auto">
+            <div class="flex items-center">
+                <ul class="flex flex-row font-medium mt-0 mr-6 space-x-8 text-sm">
+                    {{ nav:pages }}
+                        <li><a class="text-gray-900 dark:text-white hover:underline" href="{{ url }}">{{ titulo }}</a>
+                        </li>
+                    {{ /nav:pages }}
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</section>

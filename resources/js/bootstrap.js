@@ -6,6 +6,14 @@
 
 import axios from 'axios';
 window.axios = axios;
+import Aos from "aos";
+import "aos/dist/aos.css";
+window.Aos = Aos;
+
+window.addEventListener("load", function () {
+    window.Aos.init();
+});
+
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 

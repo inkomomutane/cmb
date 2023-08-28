@@ -1,0 +1,18 @@
+<section class="splide" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+        <ul class="splide__list">
+            {{ imagens }}
+<li class="splide__slide relative flex items-center justify-center mb-4">
+    {{ responsive:imagen class=" w-full h-[80vh] object-cover" }}
+    <div class="w-full bg-gradient-to-t from-green-800/90  to-transparent   text-white absolute inset-0 flex flex-col items-center justify-center">
+        <h1 class="text-4xl font-bold mb-4 uppercase text-center mx-4" data-aos="fade-up" data-aos-offset="0" data-aos-delay="100">{{ title }}</h1>
+        <p class="text-lg mb-8 text-center mx-4" data-aos="fade-up" data-aos-offset="0" data-aos-delay="200">Que a Beira, se torne uma cidade próspera, mais segura, saudável, empreendedora, atractiva e bonita</p>
+        <a href="#" class="border border-green-300 text-white px-6 py-3 rounded-sm hover:bg-green-500
+        transition duration-300 font-medium uppercase" data-aos="fade-up" data-aos-offset="0" data-aos-delay="300">Ver mais</a>
+    </div>
+</li>
+{{ /imagens }}
+
+        </ul>
+    </div>
+</section>
