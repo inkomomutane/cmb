@@ -11,7 +11,9 @@ import "aos/dist/aos.css";
 window.Aos = Aos;
 
 window.addEventListener("load", function () {
-    window.Aos.init();
+    window.Aos.init({
+        duration: 1000,
+    });
 });
 
 
